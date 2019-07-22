@@ -1,0 +1,9 @@
+Para fazer deploy, eu exporto o conteúdo para a pasta anterior com o comando:
+pelican content/ -o .. -s pelicanconf.py
+
+As dependências foram exportadas no observacoes.txt através do pacote freeze (pip freeze)
+
+Para verificar conteúdo em server local, eu rodo o servidor http na pasta /site:
+
+cd ..
+python -m http.server
