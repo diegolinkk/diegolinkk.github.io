@@ -1,9 +1,0 @@
-﻿Para fazer deploy, eu exporto o conteúdo para a pasta anterior com o comando:
-pelican content/ -o .. -s pelicanconf.py
-
-As dependências foram exportadas no observacoes.txt através do pacote freeze (pip freeze). A idéia é que eu não exponha o virtualenv no github mas sim crie meu virtualenv a partir desse txt criado (requirements.txt) pip install -r requirements.txt
-
-Para verificar conteúdo em server local, eu rodo o servidor http na pasta /site:
-
-cd ..
-python -m http.server
