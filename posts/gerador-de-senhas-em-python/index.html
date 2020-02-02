@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Diegolinkk  | Gerador De Senhas Em Python</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.63.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="Gerador De Senhas Em Python" />
+<meta property="og:description" content="Nesse post nós vamos criar um gerador de senhas simples em Python. Este gerador foi construido para fins didáticos e pode ser utilizado caso você precise gerar senhas que não possuam nenhum viés humano.
+Conhecimento aplicado no tutorial Esse algorítmo foi feito em python e utiliza alguns recursos básicos da linguagem:
+ Importação de bibliotecas Funções Listas Laços de repetição  Escopo do gerador de senhas Para dar uma certa liberade ao usuário, o nosso gerador permitirá que o mesmo escolha algumas variáveis:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://diegolinkk.github.io/posts/gerador-de-senhas-em-python/" />
+<meta property="article:published_time" content="2020-02-01T16:08:27-03:00" />
+<meta property="article:modified_time" content="2020-02-01T16:08:27-03:00" />
+<meta itemprop="name" content="Gerador De Senhas Em Python">
+<meta itemprop="description" content="Nesse post nós vamos criar um gerador de senhas simples em Python. Este gerador foi construido para fins didáticos e pode ser utilizado caso você precise gerar senhas que não possuam nenhum viés humano.
+Conhecimento aplicado no tutorial Esse algorítmo foi feito em python e utiliza alguns recursos básicos da linguagem:
+ Importação de bibliotecas Funções Listas Laços de repetição  Escopo do gerador de senhas Para dar uma certa liberade ao usuário, o nosso gerador permitirá que o mesmo escolha algumas variáveis:">
+<meta itemprop="datePublished" content="2020-02-01T16:08:27-03:00" />
+<meta itemprop="dateModified" content="2020-02-01T16:08:27-03:00" />
+<meta itemprop="wordCount" content="357">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Gerador De Senhas Em Python"/>
+<meta name="twitter:description" content="Nesse post nós vamos criar um gerador de senhas simples em Python. Este gerador foi construido para fins didáticos e pode ser utilizado caso você precise gerar senhas que não possuam nenhum viés humano.
+Conhecimento aplicado no tutorial Esse algorítmo foi feito em python e utiliza alguns recursos básicos da linguagem:
+ Importação de bibliotecas Funções Listas Laços de repetição  Escopo do gerador de senhas Para dar uma certa liberade ao usuário, o nosso gerador permitirá que o mesmo escolha algumas variáveis:"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://diegolinkk.github.io" class="f3 fw2 hover-white no-underline white-90 dib">
+      Diegolinkk
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Gerador De Senhas Em Python</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-02-01T16:08:27-03:00">February 1, 2020</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Nesse post nós vamos criar um gerador de senhas simples em Python.
+Este gerador foi construido para fins didáticos e pode ser utilizado caso você precise gerar senhas que não possuam nenhum viés humano.</p>
+<h2 id="conhecimento-aplicado-no-tutorial">Conhecimento aplicado no tutorial</h2>
+<p>Esse algorítmo foi feito em python e utiliza alguns recursos básicos da linguagem:</p>
+<ol>
+<li>Importação de bibliotecas</li>
+<li>Funções</li>
+<li>Listas</li>
+<li>Laços de repetição</li>
+</ol>
+<h2 id="escopo-do-gerador-de-senhas">Escopo do gerador de senhas</h2>
+<p>Para dar uma certa liberade ao usuário, o nosso gerador permitirá que o mesmo escolha algumas variáveis:</p>
+<ol>
+<li>Quantidade de senhas geradas</li>
+<li>Tamanho (em caracteres) das senhas</li>
+<li>Tipo de senha (letras, numeros e caracteres especiais)</li>
+</ol>
+<h2 id="por-que-seu-script-não-aceita-argumentos-na-chamada-do-script-">Por que seu script não aceita argumentos na chamada do script ?</h2>
+<p>Nesse ponto algumas pessoas podem sugerir que esses argumentos sejam passados durante a execução do script ao invés de precisar abrir o código fonte e fazer as chamadas de função manualmente mas eu preferi deixar essa funcionalidade de lado para diminuir a complexidade do script e facilitar a compreensão do algorítmo.</p>
+<h2 id="código">Código</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#6272a4">#bibliotéca que escolhe um elemento aleatório de determinada lista</span>
+<span style="color:#ff79c6">from</span> random <span style="color:#ff79c6">import</span> choice 
+
+<span style="color:#6272a4">#definindo a lista dos caracteres que definem a complexidade das senhas. </span>
+
+letras <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">a</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">b</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">c</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">d</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">e</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">f</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">g</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">h</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">i</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">j</span><span style="color:#f1fa8c">&#39;</span>,
+<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">k</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">l</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">m</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">n</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">o</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">p</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">q</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">r</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">s</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">t</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">u</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">v</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">w</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">x</span><span style="color:#f1fa8c">&#39;</span>,
+<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">y</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">z</span><span style="color:#f1fa8c">&#39;</span>]
+
+numeros <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">1</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">2</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">3</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">4</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">5</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">6</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">7</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">8</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">9</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">0</span><span style="color:#f1fa8c">&#39;</span>]
+
+caracteres_especiais <span style="color:#ff79c6">=</span> [<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">@</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">,</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">#</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">$</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">&amp;</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">*</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">(</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">)</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">+</span><span style="color:#f1fa8c">&#39;</span>,<span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#39;</span><span style="color:#f1fa8c">-</span><span style="color:#f1fa8c">&#39;</span>]
+
+<span style="color:#6272a4">#criando a função que aceita três argumentos</span>
+<span style="color:#ff79c6">def</span> <span style="color:#50fa7b">gerador_de_senhas</span>(quantidade <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>,tamanho <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">8</span>, tipo <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">1</span>):
+    <span style="color:#6272a4">#definindo os caracteres que vão compor a senha</span>
+    <span style="color:#ff79c6">if</span> tipo <span style="color:#ff79c6">==</span> <span style="color:#bd93f9">1</span>:
+        caracteres <span style="color:#ff79c6">=</span> letras
+    <span style="color:#ff79c6">elif</span> tipo <span style="color:#ff79c6">==</span> <span style="color:#bd93f9">2</span>:
+        caracteres <span style="color:#ff79c6">=</span> letras <span style="color:#ff79c6">+</span> numeros
+    <span style="color:#ff79c6">else</span>:
+        caracteres <span style="color:#ff79c6">=</span> letras <span style="color:#ff79c6">+</span> numeros <span style="color:#ff79c6">+</span> caracteres_especiais
+
+    senhas <span style="color:#ff79c6">=</span> [] <span style="color:#6272a4">#lista de senhas</span>
+
+    <span style="color:#6272a4">#nos laços for, utilizamos _ (underline) quando </span>
+    <span style="color:#6272a4">#não utilizamos o passo dentro do laço</span>
+    <span style="color:#ff79c6">for</span> _ <span style="color:#ff79c6">in</span> <span style="color:#8be9fd;font-style:italic">range</span>(quantidade):
+        senha <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c"></span><span style="color:#f1fa8c">&#34;</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#6272a4">#limpa a senha novamente</span>
+
+        <span style="color:#6272a4">#laço se repete pra cada vez definida no tamanho</span>
+        <span style="color:#ff79c6">for</span> _ <span style="color:#ff79c6">in</span> <span style="color:#8be9fd;font-style:italic">range</span>(tamanho):
+            senha <span style="color:#ff79c6">+</span><span style="color:#ff79c6">=</span> choice(caracteres)
+
+        <span style="color:#6272a4">#inclui senha formada na lista de senhas</span>
+        senhas<span style="color:#ff79c6">.</span>append(senha) 
+    <span style="color:#ff79c6">return</span> senhas
+
+<span style="color:#6272a4">#agora utilizando a função variando tipo, tamanho e quantidade</span>
+senhas_tipo_1 <span style="color:#ff79c6">=</span> gerador_de_senhas(<span style="color:#bd93f9">5</span>,<span style="color:#bd93f9">10</span>,<span style="color:#bd93f9">1</span>)
+senhas_tipo_2 <span style="color:#ff79c6">=</span> gerador_de_senhas(<span style="color:#bd93f9">10</span>,<span style="color:#bd93f9">15</span>,<span style="color:#bd93f9">2</span>)
+senhas_tipo_3 <span style="color:#ff79c6">=</span> gerador_de_senhas(<span style="color:#bd93f9">25</span>,<span style="color:#bd93f9">6</span>,<span style="color:#bd93f9">3</span>)
+
+<span style="color:#6272a4">#mostrando as senhas</span>
+<span style="color:#ff79c6">print</span>(senhas_tipo_1)
+<span style="color:#ff79c6">print</span>(senhas_tipo_2)
+<span style="color:#ff79c6">print</span>(senhas_tipo_3)</code></pre></div>
+<h2 id="conclusão">Conclusão</h2>
+<p>Espero que tenham gostado do post e em caso de dúvidas, podem me procurar no <a href="https://twitter.com/diegolinkk">twitter</a></p>
+<h3 id="fontes">fontes</h3>
+<ol>
+<li>Variáveis não utilizadas em laços de repetição <a href="https://stackoverflow.com/questions/5477134/how-can-i-get-around-declaring-an-unused-variable-in-a-for-loop">link</a></li>
+<li>Utilizando a função random.choice <a href="https://pynative.com/python-random-choice/">link</a></li>
+</ol>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://diegolinkk.github.io" >
+    &copy;  Diegolinkk 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

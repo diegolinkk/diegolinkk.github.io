@@ -6,27 +6,20 @@
     <description>Recent content in Posts on Diegolinkk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Thu, 30 Jan 2020 22:39:39 -0300</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2020 16:08:27 -0300</lastBuildDate>
     
 	<atom:link href="https://diegolinkk.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Code Hilight</title>
-      <link>https://diegolinkk.github.io/posts/code-hilight/</link>
-      <pubDate>Thu, 30 Jan 2020 22:39:39 -0300</pubDate>
+      <title>Gerador De Senhas Em Python</title>
+      <link>https://diegolinkk.github.io/posts/gerador-de-senhas-em-python/</link>
+      <pubDate>Sat, 01 Feb 2020 16:08:27 -0300</pubDate>
       
-      <guid>https://diegolinkk.github.io/posts/code-hilight/</guid>
-      <description>Usando hilight de código lista = [1,2,3,4,5,6] for item in lista: print(item) usando uma imagem estática </description>
-    </item>
-    
-    <item>
-      <title>My Firs Post</title>
-      <link>https://diegolinkk.github.io/posts/my-firs-post/</link>
-      <pubDate>Sun, 26 Jan 2020 19:20:51 -0300</pubDate>
-      
-      <guid>https://diegolinkk.github.io/posts/my-firs-post/</guid>
-      <description>teste1 teste2  teste teste2 teste3  </description>
+      <guid>https://diegolinkk.github.io/posts/gerador-de-senhas-em-python/</guid>
+      <description>Nesse post nós vamos criar um gerador de senhas simples em Python. Este gerador foi construido para fins didáticos e pode ser utilizado caso você precise gerar senhas que não possuam nenhum viés humano.
+Conhecimento aplicado no tutorial Esse algorítmo foi feito em python e utiliza alguns recursos básicos da linguagem:
+ Importação de bibliotecas Funções Listas Laços de repetição  Escopo do gerador de senhas Para dar uma certa liberade ao usuário, o nosso gerador permitirá que o mesmo escolha algumas variáveis:</description>
     </item>
     
   </channel>
