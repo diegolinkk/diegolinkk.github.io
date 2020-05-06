@@ -19,7 +19,7 @@
       <guid>https://diegolinkk.github.io/posts/enviar-whatsapp-sem-contato/</guid>
       <description>O post de hoje é bem simples e serve para enviar whatsapp sem ter um número de contato. Segue formulário abaixo:
 Também serve para criar uma conversa consigo mesmo
-Numero do contato:  Enviar por Celular Enviar por Whatsapp Webdocument.querySelector(&#34;#btn-wpp-web&#34;).addEventListener(&#34;click&#34;, function(){numero = document.querySelector(&#34;#numero&#34;).value;url = &#34;https://web.whatsapp.com/send?phone=55&#34; + numero;window.open(url)})document.querySelector(&#34;#btn-celular&#34;).addEventListener(&#34;click&#34;, function(){numero = document.querySelector(&#34;#numero&#34;).value;url = &#34;https://wa.me/&#34; + numero;window.open(url)}) </description>
+Numero do contato:  Enviar por Celular Enviar por Whatsapp Webdocument.querySelector(&#34;#btn-wpp-web&#34;).addEventListener(&#34;click&#34;, function(){numero = document.querySelector(&#34;#numero&#34;).value;url = &#34;https://web.whatsapp.com/send?phone=55&#34; + numero;window.open(url)})document.querySelector(&#34;#btn-celular&#34;).addEventListener(&#34;click&#34;, function(){numero = document.querySelector(&#34;#numero&#34;).value;url = &#34;https://wa.me/55&#34; + numero;window.open(url)}) </description>
     </item>
     
     <item>
