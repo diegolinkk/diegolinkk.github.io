@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>postgres on Diegolinkk</title>
+    <link>https://diegolinkk.github.io/tags/postgres/</link>
+    <description>Recent content in postgres on Diegolinkk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Thu, 14 May 2020 18:30:27 -0300</lastBuildDate>
+    
+	<atom:link href="https://diegolinkk.github.io/tags/postgres/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Como Listar e conectar à Databases, listar tabelas e fazer queries no Postgres</title>
+      <link>https://diegolinkk.github.io/posts/comandos-basicos-postgres/</link>
+      <pubDate>Thu, 14 May 2020 18:30:27 -0300</pubDate>
+      
+      <guid>https://diegolinkk.github.io/posts/comandos-basicos-postgres/</guid>
+      <description>Motivação e formato do post Esse post segue um modelo de colinha onde constantemente me vejo fazendo repetidas pesquisas no google para executar alguns comandos que são triviais mas a depender do período em que eu não uso determinada ferramenta (como é o caso do Postgres), eu acabo esquecendo. Então vamos lá:
+Obs: todos os comandos já partem da premissa que você esteja conectado ao postgres
+ Listar database \l  Conectar à database \c nome_da_database  Listar tabelas (já conectado à database) \dt  Query simples sobre uma tabela \select * from nome_da_tabela;   fontes:</description>
+    </item>
+    
+  </channel>
+</rss>

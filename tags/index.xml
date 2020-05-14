@@ -6,9 +6,55 @@
     <description>Recent content in Tags on Diegolinkk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
+    <lastBuildDate>Thu, 14 May 2020 18:30:27 -0300</lastBuildDate>
     
 	<atom:link href="https://diegolinkk.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>colinha</title>
+      <link>https://diegolinkk.github.io/tags/colinha/</link>
+      <pubDate>Thu, 14 May 2020 18:30:27 -0300</pubDate>
+      
+      <guid>https://diegolinkk.github.io/tags/colinha/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>postgres</title>
+      <link>https://diegolinkk.github.io/tags/postgres/</link>
+      <pubDate>Thu, 14 May 2020 18:30:27 -0300</pubDate>
+      
+      <guid>https://diegolinkk.github.io/tags/postgres/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://diegolinkk.github.io/tags/docker/</link>
+      <pubDate>Thu, 14 May 2020 16:15:00 +0100</pubDate>
+      
+      <guid>https://diegolinkk.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>whatsapp</title>
+      <link>https://diegolinkk.github.io/tags/whatsapp/</link>
+      <pubDate>Wed, 06 May 2020 19:20:39 -0300</pubDate>
+      
+      <guid>https://diegolinkk.github.io/tags/whatsapp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://diegolinkk.github.io/tags/python/</link>
+      <pubDate>Sat, 01 Feb 2020 16:08:27 -0300</pubDate>
+      
+      <guid>https://diegolinkk.github.io/tags/python/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

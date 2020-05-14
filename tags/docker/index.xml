@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on Diegolinkk</title>
+    <link>https://diegolinkk.github.io/tags/docker/</link>
+    <description>Recent content in docker on Diegolinkk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Thu, 14 May 2020 16:15:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://diegolinkk.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compartilhando pasta local com Container no Docker Toolbox</title>
+      <link>https://diegolinkk.github.io/posts/compartilhando-pasta-docker-toolbox/</link>
+      <pubDate>Thu, 14 May 2020 16:15:00 +0100</pubDate>
+      
+      <guid>https://diegolinkk.github.io/posts/compartilhando-pasta-docker-toolbox/</guid>
+      <description>Para compartilhar arquivos entre host e container, devemos montar um volume e fazer a ligação entre eles pelo comando:
+docker container run -v &amp;#34;/c/Users/diego/Html/&amp;#34;:/home/diego -it ubuntu bash Explicando comando: docker container run # comando básico do docker para executar/iniciar um container  -v &amp;#34;/c/Users/diego/Html/&amp;#34;:/home/diego #aqui de fato estamos criando o volume, colocando o caminho da pasta na qual quero compartilhar na primeira metade e o ponto a ser montado no container na segunda metade  -it ubuntu bash # -it são parâmetros que nos permitem controlar o container e bash é o aplicativo a ser excutado, no caso vamos executar um bash dentro do container  Sendo o primeiro caminho relativo ao diretório do host, e o segundo sendo o ponto de montagem.</description>
+    </item>
+    
+  </channel>
+</rss>
