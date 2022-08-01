@@ -1,65 +1,44 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://diegolinkk.github.io/tags/colinha/</loc>
-    <lastmod>2020-05-14T18:30:27-03:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-07-31T12:30:27-03:00</lastmod>
+  </url><url>
+    <loc>https://diegolinkk.github.io/posts/teste/</loc>
+    <lastmod>2022-07-31T12:30:27-03:00</lastmod>
+  </url><url>
+    <loc>https://diegolinkk.github.io/</loc>
+    <lastmod>2022-07-31T12:30:27-03:00</lastmod>
+  </url><url>
+    <loc>https://diegolinkk.github.io/tags/postgres/</loc>
+    <lastmod>2022-07-31T12:30:27-03:00</lastmod>
+  </url><url>
+    <loc>https://diegolinkk.github.io/posts/</loc>
+    <lastmod>2022-07-31T12:30:27-03:00</lastmod>
+  </url><url>
+    <loc>https://diegolinkk.github.io/tags/</loc>
+    <lastmod>2022-07-31T12:30:27-03:00</lastmod>
+  </url><url>
     <loc>https://diegolinkk.github.io/posts/comandos-basicos-postgres/</loc>
     <lastmod>2020-05-14T18:30:27-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://diegolinkk.github.io/</loc>
-    <lastmod>2020-05-14T18:30:27-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://diegolinkk.github.io/tags/postgres/</loc>
-    <lastmod>2020-05-14T18:30:27-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://diegolinkk.github.io/posts/</loc>
-    <lastmod>2020-05-14T18:30:27-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://diegolinkk.github.io/tags/</loc>
-    <lastmod>2020-05-14T18:30:27-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://diegolinkk.github.io/posts/compartilhando-pasta-docker-toolbox/</loc>
     <lastmod>2020-05-14T16:15:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://diegolinkk.github.io/tags/docker/</loc>
     <lastmod>2020-05-14T16:15:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://diegolinkk.github.io/posts/enviar-whatsapp-sem-contato/</loc>
     <lastmod>2020-05-06T19:20:39-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://diegolinkk.github.io/tags/whatsapp/</loc>
     <lastmod>2020-05-06T19:20:39-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://diegolinkk.github.io/posts/gerador-de-senhas-em-python/</loc>
     <lastmod>2020-02-01T16:08:27-03:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://diegolinkk.github.io/tags/python/</loc>
     <lastmod>2020-02-01T16:08:27-03:00</lastmod>
   </url>
-  
 </urlset>

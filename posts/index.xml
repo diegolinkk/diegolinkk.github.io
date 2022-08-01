@@ -6,10 +6,17 @@
     <description>Recent content in Posts on Diegolinkk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Thu, 14 May 2020 18:30:27 -0300</lastBuildDate>
-    
-	<atom:link href="https://diegolinkk.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 31 Jul 2022 12:30:27 -0300</lastBuildDate><atom:link href="https://diegolinkk.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Como Listar e conectar à Databases, listar tabelas e fazer queries no Postgres</title>
+      <link>https://diegolinkk.github.io/posts/teste/</link>
+      <pubDate>Sun, 31 Jul 2022 12:30:27 -0300</pubDate>
+      
+      <guid>https://diegolinkk.github.io/posts/teste/</guid>
+      <description>Motivação e formato do post Esse post segue um modelo de colinha onde constantemente me vejo fazendo repetidas pesquisas no google para executar alguns comandos que são triviais mas a depender do período em que eu não uso determinada ferramenta (como é o caso do Postgres), eu acabo esquecendo. Então vamos lá:
+Obs: todos os comandos já partem da premissa que você esteja conectado ao postgres
+Listar database \l Conectar à database \c nome_da_database Listar tabelas (já conectado à database) \dt Query simples sobre uma tabela \select * from nome_da_tabela; fontes:</description>
+    </item>
     
     <item>
       <title>Como Listar e conectar à Databases, listar tabelas e fazer queries no Postgres</title>
@@ -19,7 +26,7 @@
       <guid>https://diegolinkk.github.io/posts/comandos-basicos-postgres/</guid>
       <description>Motivação e formato do post Esse post segue um modelo de colinha onde constantemente me vejo fazendo repetidas pesquisas no google para executar alguns comandos que são triviais mas a depender do período em que eu não uso determinada ferramenta (como é o caso do Postgres), eu acabo esquecendo. Então vamos lá:
 Obs: todos os comandos já partem da premissa que você esteja conectado ao postgres
- Listar database \l  Conectar à database \c nome_da_database  Listar tabelas (já conectado à database) \dt  Query simples sobre uma tabela \select * from nome_da_tabela;   fontes:</description>
+Listar database \l Conectar à database \c nome_da_database Listar tabelas (já conectado à database) \dt Query simples sobre uma tabela \select * from nome_da_tabela; fontes:</description>
     </item>
     
     <item>
@@ -29,7 +36,7 @@ Obs: todos os comandos já partem da premissa que você esteja conectado ao post
       
       <guid>https://diegolinkk.github.io/posts/compartilhando-pasta-docker-toolbox/</guid>
       <description>Para compartilhar arquivos entre host e container, devemos montar um volume e fazer a ligação entre eles pelo comando:
-docker container run -v &amp;#34;/c/Users/diego/Html/&amp;#34;:/home/diego -it ubuntu bash Explicando comando: docker container run # comando básico do docker para executar/iniciar um container  -v &amp;#34;/c/Users/diego/Html/&amp;#34;:/home/diego #aqui de fato estamos criando o volume, colocando o caminho da pasta na qual quero compartilhar na primeira metade e o ponto a ser montado no container na segunda metade  -it ubuntu bash # -it são parâmetros que nos permitem controlar o container e bash é o aplicativo a ser excutado, no caso vamos executar um bash dentro do container  Sendo o primeiro caminho relativo ao diretório do host, e o segundo sendo o ponto de montagem.</description>
+docker container run -v &amp;#34;/c/Users/diego/Html/&amp;#34;:/home/diego -it ubuntu bash Explicando comando: docker container run # comando básico do docker para executar/iniciar um container -v &amp;#34;/c/Users/diego/Html/&amp;#34;:/home/diego #aqui de fato estamos criando o volume, colocando o caminho da pasta na qual quero compartilhar na primeira metade e o ponto a ser montado no container na segunda metade -it ubuntu bash # -it são parâmetros que nos permitem controlar o container e bash é o aplicativo a ser excutado, no caso vamos executar um bash dentro do container Sendo o primeiro caminho relativo ao diretório do host, e o segundo sendo o ponto de montagem.</description>
     </item>
     
     <item>
@@ -40,7 +47,7 @@ docker container run -v &amp;#34;/c/Users/diego/Html/&amp;#34;:/home/diego -it u
       <guid>https://diegolinkk.github.io/posts/enviar-whatsapp-sem-contato/</guid>
       <description>O post de hoje é bem simples e serve para enviar whatsapp sem ter um número de contato. Segue formulário abaixo:
 Também serve para criar uma conversa consigo mesmo
-Numero do contato:  Enviar por Celular Enviar por Whatsapp Webdocument.querySelector(&#34;#btn-wpp-web&#34;).addEventListener(&#34;click&#34;, function(){numero = document.querySelector(&#34;#numero&#34;).value;url = &#34;https://web.whatsapp.com/send?phone=55&#34; + numero;window.open(url)})document.querySelector(&#34;#btn-celular&#34;).addEventListener(&#34;click&#34;, function(){numero = document.querySelector(&#34;#numero&#34;).value;url = &#34;https://wa.me/55&#34; + numero;window.open(url)}) </description>
+Numero do contato: Enviar por Celular Enviar por Whatsapp Web</description>
     </item>
     
     <item>
@@ -51,7 +58,7 @@ Numero do contato:  Enviar por Celular Enviar por Whatsapp Webdocument.que
       <guid>https://diegolinkk.github.io/posts/gerador-de-senhas-em-python/</guid>
       <description>Nesse post nós vamos criar um gerador de senhas simples em Python. Este gerador foi construido para fins didáticos e pode ser utilizado caso você precise gerar senhas que não possuam nenhum viés humano.
 Conhecimento aplicado no tutorial Esse algorítmo foi feito em python e utiliza alguns recursos básicos da linguagem:
- Importação de bibliotecas Funções Listas Laços de repetição  Escopo do gerador de senhas Para dar uma certa liberade ao usuário, o nosso gerador permitirá que o mesmo escolha algumas variáveis:</description>
+Importação de bibliotecas Funções Listas Laços de repetição Escopo do gerador de senhas Para dar uma certa liberade ao usuário, o nosso gerador permitirá que o mesmo escolha algumas variáveis:</description>
     </item>
     
   </channel>

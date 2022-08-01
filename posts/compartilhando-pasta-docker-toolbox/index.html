@@ -16,7 +16,7 @@
     
     <title>Diegolinkk  | Compartilhando pasta local com Container no Docker Toolbox</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.63.1" />
+    <meta name="generator" content="Hugo 0.101.0" />
     
     
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -37,24 +37,21 @@
     
     <meta property="og:title" content="Compartilhando pasta local com Container no Docker Toolbox" />
 <meta property="og:description" content="Para compartilhar arquivos entre host e container, devemos montar um volume e fazer a ligação entre eles pelo comando:
-docker container run -v &#34;/c/Users/diego/Html/&#34;:/home/diego -it ubuntu bash Explicando comando: docker container run # comando básico do docker para executar/iniciar um container  -v &#34;/c/Users/diego/Html/&#34;:/home/diego #aqui de fato estamos criando o volume, colocando o caminho da pasta na qual quero compartilhar na primeira metade e o ponto a ser montado no container na segunda metade  -it ubuntu bash # -it são parâmetros que nos permitem controlar o container e bash é o aplicativo a ser excutado, no caso vamos executar um bash dentro do container  Sendo o primeiro caminho relativo ao diretório do host, e o segundo sendo o ponto de montagem." />
+docker container run -v &#34;/c/Users/diego/Html/&#34;:/home/diego -it ubuntu bash Explicando comando: docker container run # comando básico do docker para executar/iniciar um container -v &#34;/c/Users/diego/Html/&#34;:/home/diego #aqui de fato estamos criando o volume, colocando o caminho da pasta na qual quero compartilhar na primeira metade e o ponto a ser montado no container na segunda metade -it ubuntu bash # -it são parâmetros que nos permitem controlar o container e bash é o aplicativo a ser excutado, no caso vamos executar um bash dentro do container Sendo o primeiro caminho relativo ao diretório do host, e o segundo sendo o ponto de montagem." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://diegolinkk.github.io/posts/compartilhando-pasta-docker-toolbox/" />
+<meta property="og:url" content="https://diegolinkk.github.io/posts/compartilhando-pasta-docker-toolbox/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-05-14T16:15:00+01:00" />
 <meta property="article:modified_time" content="2020-05-14T16:15:00+01:00" />
+
 <meta itemprop="name" content="Compartilhando pasta local com Container no Docker Toolbox">
 <meta itemprop="description" content="Para compartilhar arquivos entre host e container, devemos montar um volume e fazer a ligação entre eles pelo comando:
-docker container run -v &#34;/c/Users/diego/Html/&#34;:/home/diego -it ubuntu bash Explicando comando: docker container run # comando básico do docker para executar/iniciar um container  -v &#34;/c/Users/diego/Html/&#34;:/home/diego #aqui de fato estamos criando o volume, colocando o caminho da pasta na qual quero compartilhar na primeira metade e o ponto a ser montado no container na segunda metade  -it ubuntu bash # -it são parâmetros que nos permitem controlar o container e bash é o aplicativo a ser excutado, no caso vamos executar um bash dentro do container  Sendo o primeiro caminho relativo ao diretório do host, e o segundo sendo o ponto de montagem.">
-<meta itemprop="datePublished" content="2020-05-14T16:15:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-05-14T16:15:00&#43;01:00" />
+docker container run -v &#34;/c/Users/diego/Html/&#34;:/home/diego -it ubuntu bash Explicando comando: docker container run # comando básico do docker para executar/iniciar um container -v &#34;/c/Users/diego/Html/&#34;:/home/diego #aqui de fato estamos criando o volume, colocando o caminho da pasta na qual quero compartilhar na primeira metade e o ponto a ser montado no container na segunda metade -it ubuntu bash # -it são parâmetros que nos permitem controlar o container e bash é o aplicativo a ser excutado, no caso vamos executar um bash dentro do container Sendo o primeiro caminho relativo ao diretório do host, e o segundo sendo o ponto de montagem."><meta itemprop="datePublished" content="2020-05-14T16:15:00+01:00" />
+<meta itemprop="dateModified" content="2020-05-14T16:15:00+01:00" />
 <meta itemprop="wordCount" content="142">
-
-
-
 <meta itemprop="keywords" content="docker," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Compartilhando pasta local com Container no Docker Toolbox"/>
 <meta name="twitter:description" content="Para compartilhar arquivos entre host e container, devemos montar um volume e fazer a ligação entre eles pelo comando:
-docker container run -v &#34;/c/Users/diego/Html/&#34;:/home/diego -it ubuntu bash Explicando comando: docker container run # comando básico do docker para executar/iniciar um container  -v &#34;/c/Users/diego/Html/&#34;:/home/diego #aqui de fato estamos criando o volume, colocando o caminho da pasta na qual quero compartilhar na primeira metade e o ponto a ser montado no container na segunda metade  -it ubuntu bash # -it são parâmetros que nos permitem controlar o container e bash é o aplicativo a ser excutado, no caso vamos executar um bash dentro do container  Sendo o primeiro caminho relativo ao diretório do host, e o segundo sendo o ponto de montagem."/>
+docker container run -v &#34;/c/Users/diego/Html/&#34;:/home/diego -it ubuntu bash Explicando comando: docker container run # comando básico do docker para executar/iniciar um container -v &#34;/c/Users/diego/Html/&#34;:/home/diego #aqui de fato estamos criando o volume, colocando o caminho da pasta na qual quero compartilhar na primeira metade e o ponto a ser montado no container na segunda metade -it ubuntu bash # -it são parâmetros que nos permitem controlar o container e bash é o aplicativo a ser excutado, no caso vamos executar um bash dentro do container Sendo o primeiro caminho relativo ao diretório do host, e o segundo sendo o ponto de montagem."/>
 
   </head>
 
@@ -126,11 +123,11 @@ docker container run -v &#34;/c/Users/diego/Html/&#34;:/home/diego -it ubuntu ba
     </header>
 
     <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Para compartilhar arquivos entre host e container, devemos montar um volume e fazer a ligação entre eles pelo comando:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-docker" data-lang="docker">docker container run -v <span style="color:#f1fa8c">&#34;/c/Users/diego/Html/&#34;</span>:/home/diego -it ubuntu bash</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-docker" data-lang="docker"><span style="display:flex;"><span>docker container run -v <span style="color:#f1fa8c">&#34;/c/Users/diego/Html/&#34;</span>:/home/diego -it ubuntu bash</span></span></code></pre></div>
 <h3 id="explicando-comando">Explicando comando:</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-docker" data-lang="docker"> docker container run <span style="color:#6272a4"># comando básico do docker para executar/iniciar um container</span> </code></pre></div>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-docker" data-lang="docker"> -v <span style="color:#f1fa8c">&#34;/c/Users/diego/Html/&#34;</span>:/home/diego <span style="color:#6272a4">#aqui de fato estamos criando o volume, colocando o caminho da pasta na qual quero compartilhar na primeira metade e o ponto a ser montado no container na segunda metade</span> </code></pre></div>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-docker" data-lang="docker">-it ubuntu bash <span style="color:#6272a4"># -it são parâmetros que nos permitem controlar o container e bash é o aplicativo a ser excutado, no caso vamos executar um bash dentro do container</span> </code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-docker" data-lang="docker"><span style="display:flex;"><span> docker container run <span style="color:#6272a4"># comando básico do docker para executar/iniciar um container </span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-docker" data-lang="docker"><span style="display:flex;"><span> -v <span style="color:#f1fa8c">&#34;/c/Users/diego/Html/&#34;</span>:/home/diego <span style="color:#6272a4">#aqui de fato estamos criando o volume, colocando o caminho da pasta na qual quero compartilhar na primeira metade e o ponto a ser montado no container na segunda metade </span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-docker" data-lang="docker"><span style="display:flex;"><span>-it ubuntu bash <span style="color:#6272a4"># -it são parâmetros que nos permitem controlar o container e bash é o aplicativo a ser excutado, no caso vamos executar um bash dentro do container </span></span></span></code></pre></div>
 <p>Sendo o primeiro caminho relativo ao diretório do host, e o segundo sendo o ponto de montagem.</p>
 <h2 id="observação-importante">Observação importante</h2>
 <p>Por alguma limitação, o docker toolbox NÃO permite compartilhamento de arquivos que estejam fora da pasta do usuário</p>
@@ -164,7 +161,7 @@ docker container run -v &#34;/c/Users/diego/Html/&#34;:/home/diego -it ubuntu ba
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://diegolinkk.github.io" >
-    &copy;  Diegolinkk 2020 
+    &copy;  Diegolinkk 2022 
   </a>
     <div>
 
