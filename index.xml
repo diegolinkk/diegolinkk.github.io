@@ -8,6 +8,15 @@
     <language>pt-br</language>
     <lastBuildDate>Sun, 31 Jul 2022 12:30:27 -0300</lastBuildDate><atom:link href="https://diegolinkk.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Colinha de comandos</title>
+      <link>https://diegolinkk.github.io/colinha/</link>
+      <pubDate>Sat, 15 Oct 2022 20:39:39 -0300</pubDate>
+      
+      <guid>https://diegolinkk.github.io/colinha/</guid>
+      <description>Colinha de comandos</description>
+    </item>
+    
+    <item>
       <title>Como Listar e conectar à Databases, listar tabelas e fazer queries no Postgres</title>
       <link>https://diegolinkk.github.io/posts/teste/</link>
       <pubDate>Sun, 31 Jul 2022 12:30:27 -0300</pubDate>
