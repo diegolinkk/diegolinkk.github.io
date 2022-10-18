@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Diegolinkk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 31 Jul 2022 12:30:27 -0300</lastBuildDate><atom:link href="https://diegolinkk.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Oct 2022 21:30:27 -0300</lastBuildDate><atom:link href="https://diegolinkk.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recebendo e trabalhando com parâmetros em scripts PHP</title>
+      <link>https://diegolinkk.github.io/posts/como-receber-argumentos-em-scripts-php/</link>
+      <pubDate>Mon, 17 Oct 2022 21:30:27 -0300</pubDate>
+      
+      <guid>https://diegolinkk.github.io/posts/como-receber-argumentos-em-scripts-php/</guid>
+      <description>Nesse rápido post, vamos entender como receber argumentos vindos da linha de comando ao chamar um script PHP.
+A variável $ARGV O elemento chave dessa questão é a variável pré definida $ARGV.
+Essa variável do tipo array e esta armazena todos os parâmetros passados para o script. O primeiro elemento do array é sempre o nome do script e os demais são os argumentos passados.
+Exemplo Vamos criar um script que exibe:</description>
+    </item>
+    
     <item>
       <title>Como Listar e conectar à Databases, listar tabelas e fazer queries no Postgres</title>
       <link>https://diegolinkk.github.io/posts/teste/</link>

@@ -2,25 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://diegolinkk.github.io/tags/colinha/</loc>
+    <lastmod>2022-10-17T21:30:27-03:00</lastmod>
+  </url><url>
+    <loc>https://diegolinkk.github.io/</loc>
+    <lastmod>2022-10-17T21:30:27-03:00</lastmod>
+  </url><url>
+    <loc>https://diegolinkk.github.io/tags/php/</loc>
+    <lastmod>2022-10-17T21:30:27-03:00</lastmod>
+  </url><url>
+    <loc>https://diegolinkk.github.io/posts/</loc>
+    <lastmod>2022-10-17T21:30:27-03:00</lastmod>
+  </url><url>
+    <loc>https://diegolinkk.github.io/posts/como-receber-argumentos-em-scripts-php/</loc>
+    <lastmod>2022-10-17T21:30:27-03:00</lastmod>
+  </url><url>
+    <loc>https://diegolinkk.github.io/tags/</loc>
+    <lastmod>2022-10-17T21:30:27-03:00</lastmod>
+  </url><url>
     <loc>https://diegolinkk.github.io/colinha/</loc>
     <lastmod>2022-10-15T20:39:39-03:00</lastmod>
-  </url><url>
-    <loc>https://diegolinkk.github.io/tags/colinha/</loc>
-    <lastmod>2022-07-31T12:30:27-03:00</lastmod>
   </url><url>
     <loc>https://diegolinkk.github.io/posts/teste/</loc>
     <lastmod>2022-07-31T12:30:27-03:00</lastmod>
   </url><url>
-    <loc>https://diegolinkk.github.io/</loc>
-    <lastmod>2022-07-31T12:30:27-03:00</lastmod>
-  </url><url>
     <loc>https://diegolinkk.github.io/tags/postgres/</loc>
-    <lastmod>2022-07-31T12:30:27-03:00</lastmod>
-  </url><url>
-    <loc>https://diegolinkk.github.io/posts/</loc>
-    <lastmod>2022-07-31T12:30:27-03:00</lastmod>
-  </url><url>
-    <loc>https://diegolinkk.github.io/tags/</loc>
     <lastmod>2022-07-31T12:30:27-03:00</lastmod>
   </url><url>
     <loc>https://diegolinkk.github.io/posts/comandos-basicos-postgres/</loc>

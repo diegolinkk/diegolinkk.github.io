@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157713281-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-157713281-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Diegolinkk  | Recebendo e trabalhando com parâmetros em scripts PHP</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.101.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.1cb140d8ba31d5b2f1114537dd04802a.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="Recebendo e trabalhando com parâmetros em scripts PHP" />
+<meta property="og:description" content="Nesse rápido post, vamos entender como receber argumentos vindos da linha de comando ao chamar um script PHP.
+A variável $ARGV O elemento chave dessa questão é a variável pré definida $ARGV.
+Essa variável do tipo array e esta armazena todos os parâmetros passados para o script. O primeiro elemento do array é sempre o nome do script e os demais são os argumentos passados.
+Exemplo Vamos criar um script que exibe:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://diegolinkk.github.io/posts/como-receber-argumentos-em-scripts-php/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-17T21:30:27-03:00" />
+<meta property="article:modified_time" content="2022-10-17T21:30:27-03:00" />
+
+<meta itemprop="name" content="Recebendo e trabalhando com parâmetros em scripts PHP">
+<meta itemprop="description" content="Nesse rápido post, vamos entender como receber argumentos vindos da linha de comando ao chamar um script PHP.
+A variável $ARGV O elemento chave dessa questão é a variável pré definida $ARGV.
+Essa variável do tipo array e esta armazena todos os parâmetros passados para o script. O primeiro elemento do array é sempre o nome do script e os demais são os argumentos passados.
+Exemplo Vamos criar um script que exibe:"><meta itemprop="datePublished" content="2022-10-17T21:30:27-03:00" />
+<meta itemprop="dateModified" content="2022-10-17T21:30:27-03:00" />
+<meta itemprop="wordCount" content="201">
+<meta itemprop="keywords" content="php,colinha," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Recebendo e trabalhando com parâmetros em scripts PHP"/>
+<meta name="twitter:description" content="Nesse rápido post, vamos entender como receber argumentos vindos da linha de comando ao chamar um script PHP.
+A variável $ARGV O elemento chave dessa questão é a variável pré definida $ARGV.
+Essa variável do tipo array e esta armazena todos os parâmetros passados para o script. O primeiro elemento do array é sempre o nome do script e os demais são os argumentos passados.
+Exemplo Vamos criar um script que exibe:"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://diegolinkk.github.io" class="f3 fw2 hover-white no-underline white-90 dib">
+      Diegolinkk
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/colinha/" title="colinha de comandos page">
+              colinha de comandos
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="Sobre mim page">
+              Sobre mim
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">Recebendo e trabalhando com parâmetros em scripts PHP</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2022-10-17T21:30:27-03:00">October 17, 2022</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Nesse rápido post, vamos entender como receber argumentos vindos da linha de comando ao chamar um script PHP.</p>
+<h2 id="a-variável-argv">A variável $ARGV</h2>
+<p>O elemento chave dessa questão é a variável pré definida $ARGV.</p>
+<p>Essa variável do tipo array e esta  armazena todos os parâmetros passados para o script.
+O primeiro elemento do array é sempre o nome do script e os demais são os argumentos passados.</p>
+<h2 id="exemplo">Exemplo</h2>
+<p>Vamos criar um script que exibe:</p>
+<ul>
+<li>o nome do script</li>
+<li>o primeiro argumento passado</li>
+<li>o primeiro segundo passado</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">$nomeDoScript</span> <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">$argv</span>[<span style="color:#bd93f9">0</span>]; <span style="color:#6272a4">//o primeiro argumento é sempre o nome do arquivo
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span><span style="color:#8be9fd;font-style:italic">$parametro1</span> <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">$argv</span>[<span style="color:#bd93f9">1</span>];
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">$parametro2</span> <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">$argv</span>[<span style="color:#bd93f9">2</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">echo</span> <span style="color:#f1fa8c">&#34;O nome do script é </span><span style="color:#f1fa8c">{</span><span style="color:#8be9fd;font-style:italic">$nomeDoScript</span><span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#ff79c6">.</span> PHP_EOL;
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">echo</span> <span style="color:#f1fa8c">&#34;Os parâmetros recebidos foram </span><span style="color:#f1fa8c">{</span><span style="color:#8be9fd;font-style:italic">$parametro1</span><span style="color:#f1fa8c">}</span><span style="color:#f1fa8c"> e </span><span style="color:#f1fa8c">{</span><span style="color:#8be9fd;font-style:italic">$parametro2</span><span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#34;</span>;</span></span></code></pre></div>
+<p>Agora vamos chamar o nosso script, que atualmente se chama script.php:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; php .<span style="color:#f1fa8c">\s</span>cript.php <span style="color:#bd93f9">100</span> <span style="color:#bd93f9">200</span></span></span></code></pre></div>
+<p>A saída no terminal será:</p>
+<pre tabindex="0"><code class="language-terminal" data-lang="terminal">O nome do script é .\script.php
+Os parâmetros recebidos foram 100 e 200</code></pre>
+<p>Vale lembrar que caso eu passe mais do que dois parâmetros, o script não apresentará nenhum erro, porém, caso eu passar menos argumentos do que o script utiliza (que nesse caso são dois), o PHP sobe um erro de &ldquo;Undefined array key&hellip;&rdquo;.</p>
+<p>Por hoje é só</p>
+<p>Fonte: <a href="https://www.php.net/manual/pt_BR/reserved.variables.argv.php">https://www.php.net/manual/pt_BR/reserved.variables.argv.php</a></p>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/php" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">php</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/colinha" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">colinha</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/posts/teste/">Como Listar e conectar à Databases, listar tabelas e fazer queries no Postgres</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/comandos-basicos-postgres/">Como Listar e conectar à Databases, listar tabelas e fazer queries no Postgres</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://diegolinkk.github.io" >
+    &copy;  Diegolinkk 2022 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
