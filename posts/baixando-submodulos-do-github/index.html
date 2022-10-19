@@ -14,12 +14,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Recebendo e trabalhando com parâmetros em scripts PHP | Diegolinkk</title>
+    <title>Baixando submódulo do Github | Diegolinkk</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Nesse rápido post, vamos entender como receber argumentos vindos da linha de comando ao chamar um script PHP.
-A variável $ARGV O elemento chave dessa questão é a variável pré definida $ARGV.
-Essa variável do tipo array e esta armazena todos os parâmetros passados para o script. O primeiro elemento do array é sempre o nome do script e os demais são os argumentos passados.
-Exemplo Vamos criar um script que exibe:">
+    <meta name="description" content="Nesse post vamos entender como baixar submódulos do Github juntamente com o clone do projeto.
+O que são submódulos do git ? Em resumo, é um git dentro de outro git.
+Mas pra que isso serve ? Digamos que você esteja desenvolvendo um blog que utiliza um template de terceiro. Esse template por sua vez, tem seu próprio repositório git e seria interessante que você mantivesse sempre essa pasta atualizada no seu atual repositório, seja lá por motivos de segurança ou de otimização.">
     <meta name="generator" content="Hugo 0.101.0" />
     
     
@@ -42,29 +41,26 @@ Exemplo Vamos criar um script que exibe:">
 
     
     
-    <meta property="og:title" content="Recebendo e trabalhando com parâmetros em scripts PHP" />
-<meta property="og:description" content="Nesse rápido post, vamos entender como receber argumentos vindos da linha de comando ao chamar um script PHP.
-A variável $ARGV O elemento chave dessa questão é a variável pré definida $ARGV.
-Essa variável do tipo array e esta armazena todos os parâmetros passados para o script. O primeiro elemento do array é sempre o nome do script e os demais são os argumentos passados.
-Exemplo Vamos criar um script que exibe:" />
+    <meta property="og:title" content="Baixando submódulo do Github" />
+<meta property="og:description" content="Nesse post vamos entender como baixar submódulos do Github juntamente com o clone do projeto.
+O que são submódulos do git ? Em resumo, é um git dentro de outro git.
+Mas pra que isso serve ? Digamos que você esteja desenvolvendo um blog que utiliza um template de terceiro. Esse template por sua vez, tem seu próprio repositório git e seria interessante que você mantivesse sempre essa pasta atualizada no seu atual repositório, seja lá por motivos de segurança ou de otimização." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://diegolinkk.github.io/posts/como-receber-argumentos-em-scripts-php/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-10-17T21:30:27-03:00" />
-<meta property="article:modified_time" content="2022-10-17T21:30:27-03:00" />
+<meta property="og:url" content="https://diegolinkk.github.io/posts/baixando-submodulos-do-github/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-18T22:30:27-03:00" />
+<meta property="article:modified_time" content="2022-10-18T22:30:27-03:00" />
 
-<meta itemprop="name" content="Recebendo e trabalhando com parâmetros em scripts PHP">
-<meta itemprop="description" content="Nesse rápido post, vamos entender como receber argumentos vindos da linha de comando ao chamar um script PHP.
-A variável $ARGV O elemento chave dessa questão é a variável pré definida $ARGV.
-Essa variável do tipo array e esta armazena todos os parâmetros passados para o script. O primeiro elemento do array é sempre o nome do script e os demais são os argumentos passados.
-Exemplo Vamos criar um script que exibe:"><meta itemprop="datePublished" content="2022-10-17T21:30:27-03:00" />
-<meta itemprop="dateModified" content="2022-10-17T21:30:27-03:00" />
-<meta itemprop="wordCount" content="200">
-<meta itemprop="keywords" content="php,colinha," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Recebendo e trabalhando com parâmetros em scripts PHP"/>
-<meta name="twitter:description" content="Nesse rápido post, vamos entender como receber argumentos vindos da linha de comando ao chamar um script PHP.
-A variável $ARGV O elemento chave dessa questão é a variável pré definida $ARGV.
-Essa variável do tipo array e esta armazena todos os parâmetros passados para o script. O primeiro elemento do array é sempre o nome do script e os demais são os argumentos passados.
-Exemplo Vamos criar um script que exibe:"/>
+<meta itemprop="name" content="Baixando submódulo do Github">
+<meta itemprop="description" content="Nesse post vamos entender como baixar submódulos do Github juntamente com o clone do projeto.
+O que são submódulos do git ? Em resumo, é um git dentro de outro git.
+Mas pra que isso serve ? Digamos que você esteja desenvolvendo um blog que utiliza um template de terceiro. Esse template por sua vez, tem seu próprio repositório git e seria interessante que você mantivesse sempre essa pasta atualizada no seu atual repositório, seja lá por motivos de segurança ou de otimização."><meta itemprop="datePublished" content="2022-10-18T22:30:27-03:00" />
+<meta itemprop="dateModified" content="2022-10-18T22:30:27-03:00" />
+<meta itemprop="wordCount" content="408">
+<meta itemprop="keywords" content="git,github,colinha," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Baixando submódulo do Github"/>
+<meta name="twitter:description" content="Nesse post vamos entender como baixar submódulos do Github juntamente com o clone do projeto.
+O que são submódulos do git ? Em resumo, é um git dentro de outro git.
+Mas pra que isso serve ? Digamos que você esteja desenvolvendo um blog que utiliza um template de terceiro. Esse template por sua vez, tem seu próprio repositório git e seria interessante que você mantivesse sempre essa pasta atualizada no seu atual repositório, seja lá por motivos de segurança ou de otimização."/>
 
 	
   </head>
@@ -165,7 +161,7 @@ Exemplo Vamos criar um script que exibe:"/>
   <div id="sharing" class="mt3 ananke-socials">
     
       
-      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://diegolinkk.github.io/posts/como-receber-argumentos-em-scripts-php/&amp;title=Recebendo%20e%20trabalhando%20com%20par%c3%a2metros%20em%20scripts%20PHP" class="ananke-social-link linkedin no-underline" aria-label="share on LinkedIn">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://diegolinkk.github.io/posts/baixando-submodulos-do-github/&amp;title=Baixando%20subm%c3%b3dulo%20do%20Github" class="ananke-social-link linkedin no-underline" aria-label="share on LinkedIn">
         
         <span class="icon"> <svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
@@ -177,46 +173,63 @@ Exemplo Vamos criar um script que exibe:"/>
   </div>
 
 
-      <h1 class="f1 athelas mt3 mb1">Recebendo e trabalhando com parâmetros em scripts PHP</h1>
+      <h1 class="f1 athelas mt3 mb1">Baixando submódulo do Github</h1>
       
       
       
-      <time class="f6 mv4 dib tracked" datetime="2022-10-17T21:30:27-03:00">October 17, 2022</time>
+      <time class="f6 mv4 dib tracked" datetime="2022-10-18T22:30:27-03:00">October 18, 2022</time>
       
 
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Nesse rápido post, vamos entender como receber argumentos vindos da linha de comando ao chamar um script PHP.</p>
-<h2 id="a-variável-argv">A variável $ARGV</h2>
-<p>O elemento chave dessa questão é a variável pré definida $ARGV.</p>
-<p>Essa variável do tipo array e esta  armazena todos os parâmetros passados para o script.
-O primeiro elemento do array é sempre o nome do script e os demais são os argumentos passados.</p>
-<h2 id="exemplo">Exemplo</h2>
-<p>Vamos criar um script que exibe:</p>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Nesse post vamos entender como baixar submódulos do Github juntamente com o clone do projeto.</p>
+<h2 id="o-que-são-submódulos-do-git-">O que são submódulos do git ?</h2>
+<p>Em resumo, é um git dentro de outro git.</p>
+<h2 id="mas-pra-que-isso-serve-">Mas pra que isso serve ?</h2>
+<p>Digamos que você esteja desenvolvendo um blog que utiliza um template de terceiro. Esse template por sua vez, tem seu próprio repositório git e seria interessante que você mantivesse sempre essa pasta atualizada no seu atual repositório, seja lá por motivos de segurança ou de otimização.
+Para que você não precise ficar baixando esse módulo separado da sua pasta e copiar/colar em seguida no seu repositório, você pode adicionar um &ldquo;git de terceiro&rdquo; dentro do  seu repositório e atualizar sempre que você quiser (normalmente com git pull). Esse recurso é chamado de submódulo no git.</p>
+<h2 id="adicionando-um-submódulo-no-meu-repositório">Adicionando um submódulo no meu repositório.</h2>
+<p>Dentro do seu repositório git já iniciado, você deve escolher uma subpasta e apontar o link do repositório através do comando abaixo, digamos que você vai adicionar o submódulo na pasta de nome &ldquo;teste&rdquo;:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6272a4"># o link é de um repositório válido do github</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># da mesma forma que fazemos com o git clone</span>
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git teste</span></span></code></pre></div>
+<p>Pronto, agora toda vez que eu quiser atualizar essa pasta com o seu repositório git, eu entro dentro dessa pasta e executo o &ldquo;git pull&rdquo; da mesma forma que faríamos com qualquer outro projeto.</p>
+<h2 id="e-quando-eu-baixar-meu-repositório-ja-vem-tudo-junto-">E quando eu baixar meu repositório, ja vem tudo junto ?</h2>
+<p>A resposta é não, a pasta vem baixada, porém vem vazia, mas isso é fácil de resolver, basta adicionar o comando &ndash;recursive:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push <span style="color:#ff79c6">[</span>https://link-do-seu-projeto.git<span style="color:#ff79c6">]</span> --recursive</span></span></code></pre></div>
+<p>pronto, tudo nos conformes</p>
+<h2 id="e-para-listar-os-submódulos-que-meu-projeto-tem">E para listar os submódulos que meu projeto tem:</h2>
+<p>Simples:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule</span></span></code></pre></div></p>
+<p>A saída vai ser algo parecido com isso:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1b21063360f0f7905f0ae9d736d14da0c4393e87 blog/public <span style="color:#ff79c6">(</span>heads/master<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>+0340796dd5889154b8d1e71d09b75bf2883f2bab blog/themes/ananke <span style="color:#ff79c6">(</span>v2.5.6-113-g0340796<span style="color:#ff79c6">)</span></span></span></code></pre></div></p>
+<p>Nessa saída, temos dois submódulos, sendo que o primeiro está na pasta blog/public e o segundo está em blog/themes/ananke.</p>
+<h2 id="como-eu-vejo-o-link-do-repositório-do-submódulo-">Como eu vejo o link do repositório do submódulo ?</h2>
+<p>Com a informação acima em mãos, eu posso ir na pasta do repositório, por exemplo, na pasta blog/public:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">cd</span> blog/public</span></span></code></pre></div></p>
+<p>E executar o comando git remote &ndash;verbose para verificar o link do repositório remoto:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote -v</span></span></code></pre></div></p>
+<p>A saída vai ser mais ou menos assim:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>origin  https://github.com/theNewDynamic/gohugo-theme-ananke.git <span style="color:#ff79c6">(</span>fetch<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>origin  https://github.com/theNewDynamic/gohugo-theme-ananke.git <span style="color:#ff79c6">(</span>push<span style="color:#ff79c6">)</span></span></span></code></pre></div></p>
+<p>Se você quiser um repositório de exemplo que contenha submódulos reais, você pode clonar o repositório git desse blog no link abaixo:</p>
+<p><a href="https://github.com/diegolinkk/blog">https://github.com/diegolinkk/blog</a></p>
+<p>Por hoje é só.</p>
+<h2 id="fontes">Fontes</h2>
 <ul>
-<li>o nome do script</li>
-<li>o primeiro argumento passado</li>
-<li>o segundo passado</li>
+<li><a href="https://pt.stackoverflow.com/questions/111313/para-que-serve-um-submodule-no-git">https://pt.stackoverflow.com/questions/111313/para-que-serve-um-submodule-no-git</a></li>
+<li><a href="https://github.com/theNewDynamic/gohugo-theme-ananke">https://github.com/theNewDynamic/gohugo-theme-ananke</a></li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">$nomeDoScript</span> <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">$argv</span>[<span style="color:#bd93f9">0</span>]; <span style="color:#6272a4">//o primeiro argumento é sempre o nome do arquivo
-</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span><span style="color:#8be9fd;font-style:italic">$parametro1</span> <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">$argv</span>[<span style="color:#bd93f9">1</span>];
-</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">$parametro2</span> <span style="color:#ff79c6">=</span> <span style="color:#8be9fd;font-style:italic">$argv</span>[<span style="color:#bd93f9">2</span>];
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff79c6">echo</span> <span style="color:#f1fa8c">&#34;O nome do script é </span><span style="color:#f1fa8c">{</span><span style="color:#8be9fd;font-style:italic">$nomeDoScript</span><span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#34;</span> <span style="color:#ff79c6">.</span> PHP_EOL;
-</span></span><span style="display:flex;"><span><span style="color:#ff79c6">echo</span> <span style="color:#f1fa8c">&#34;Os parâmetros recebidos foram </span><span style="color:#f1fa8c">{</span><span style="color:#8be9fd;font-style:italic">$parametro1</span><span style="color:#f1fa8c">}</span><span style="color:#f1fa8c"> e </span><span style="color:#f1fa8c">{</span><span style="color:#8be9fd;font-style:italic">$parametro2</span><span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#34;</span>;</span></span></code></pre></div>
-<p>Agora vamos chamar o nosso script, que atualmente se chama script.php:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt; php .<span style="color:#f1fa8c">\s</span>cript.php <span style="color:#bd93f9">100</span> <span style="color:#bd93f9">200</span></span></span></code></pre></div>
-<p>A saída no terminal será:</p>
-<pre tabindex="0"><code class="language-terminal" data-lang="terminal">O nome do script é .\script.php
-Os parâmetros recebidos foram 100 e 200</code></pre>
-<p>Vale lembrar que caso eu passe mais do que dois parâmetros, o script não apresentará nenhum erro, porém, caso eu passar menos argumentos do que o script utiliza (que nesse caso são dois), o PHP sobe um erro de &ldquo;Undefined array key&hellip;&rdquo;.</p>
-<p>Por hoje é só</p>
-<p>Fonte: <a href="https://www.php.net/manual/pt_BR/reserved.variables.argv.php">https://www.php.net/manual/pt_BR/reserved.variables.argv.php</a></p>
 <ul class="pa0">
   
    <li class="list di">
-     <a href="/tags/php/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">php</a>
+     <a href="/tags/git/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">git</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/github/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">github</a>
    </li>
   
    <li class="list di">
@@ -239,6 +252,10 @@ Os parâmetros recebidos foram 100 e 200</code></pre>
     <p class="f5 b mb3">Related</p>
     <ul class="pa0 list">
 	   
+	     <li  class="mb2">
+          <a href="/posts/como-receber-argumentos-em-scripts-php/">Recebendo e trabalhando com parâmetros em scripts PHP</a>
+        </li>
+	    
 	     <li  class="mb2">
           <a href="/posts/teste/">Como Listar e conectar à Databases, listar tabelas e fazer queries no Postgres</a>
         </li>
