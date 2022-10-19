@@ -8,13 +8,13 @@
     <language>pt-br</language>
     <lastBuildDate>Tue, 18 Oct 2022 22:30:27 -0300</lastBuildDate><atom:link href="https://diegolinkk.github.io/tags/colinha/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Baixando submódulo do Github</title>
-      <link>https://diegolinkk.github.io/posts/baixando-submodulos-do-github/</link>
+      <title>Baixando submódulo do Git e Github</title>
+      <link>https://diegolinkk.github.io/posts/baixando-submodulos-do-git-e-github/</link>
       <pubDate>Tue, 18 Oct 2022 22:30:27 -0300</pubDate>
       
-      <guid>https://diegolinkk.github.io/posts/baixando-submodulos-do-github/</guid>
+      <guid>https://diegolinkk.github.io/posts/baixando-submodulos-do-git-e-github/</guid>
       <description>Nesse post vamos entender como baixar submódulos do Github juntamente com o clone do projeto.
-O que são submódulos do git ? Em resumo, é um git dentro de outro git.
+O que são submódulos do git ? De uma forma bem resumida, é um git dentro de outro git.
 Mas pra que isso serve ? Digamos que você esteja desenvolvendo um blog que utiliza um template de terceiro. Esse template por sua vez, tem seu próprio repositório git e seria interessante que você mantivesse sempre essa pasta atualizada no seu atual repositório, seja lá por motivos de segurança ou de otimização.</description>
     </item>
     

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157713281-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-157713281-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Baixando submódulo do Git e Github | Diegolinkk</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Nesse post vamos entender como baixar submódulos do Github juntamente com o clone do projeto.
+O que são submódulos do git ? De uma forma bem resumida, é um git dentro de outro git.
+Mas pra que isso serve ? Digamos que você esteja desenvolvendo um blog que utiliza um template de terceiro. Esse template por sua vez, tem seu próprio repositório git e seria interessante que você mantivesse sempre essa pasta atualizada no seu atual repositório, seja lá por motivos de segurança ou de otimização.">
+    <meta name="generator" content="Hugo 0.101.0" />
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Baixando submódulo do Git e Github" />
+<meta property="og:description" content="Nesse post vamos entender como baixar submódulos do Github juntamente com o clone do projeto.
+O que são submódulos do git ? De uma forma bem resumida, é um git dentro de outro git.
+Mas pra que isso serve ? Digamos que você esteja desenvolvendo um blog que utiliza um template de terceiro. Esse template por sua vez, tem seu próprio repositório git e seria interessante que você mantivesse sempre essa pasta atualizada no seu atual repositório, seja lá por motivos de segurança ou de otimização." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://diegolinkk.github.io/posts/baixando-submodulos-do-git-e-github/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-10-18T22:30:27-03:00" />
+<meta property="article:modified_time" content="2022-10-18T22:30:27-03:00" />
+
+<meta itemprop="name" content="Baixando submódulo do Git e Github">
+<meta itemprop="description" content="Nesse post vamos entender como baixar submódulos do Github juntamente com o clone do projeto.
+O que são submódulos do git ? De uma forma bem resumida, é um git dentro de outro git.
+Mas pra que isso serve ? Digamos que você esteja desenvolvendo um blog que utiliza um template de terceiro. Esse template por sua vez, tem seu próprio repositório git e seria interessante que você mantivesse sempre essa pasta atualizada no seu atual repositório, seja lá por motivos de segurança ou de otimização."><meta itemprop="datePublished" content="2022-10-18T22:30:27-03:00" />
+<meta itemprop="dateModified" content="2022-10-18T22:30:27-03:00" />
+<meta itemprop="wordCount" content="463">
+<meta itemprop="keywords" content="git/github,colinha," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Baixando submódulo do Git e Github"/>
+<meta name="twitter:description" content="Nesse post vamos entender como baixar submódulos do Github juntamente com o clone do projeto.
+O que são submódulos do git ? De uma forma bem resumida, é um git dentro de outro git.
+Mas pra que isso serve ? Digamos que você esteja desenvolvendo um blog que utiliza um template de terceiro. Esse template por sua vez, tem seu próprio repositório git e seria interessante que você mantivesse sempre essa pasta atualizada no seu atual repositório, seja lá por motivos de segurança ou de otimização."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Diegolinkk
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/colinha/" title="colinha de comandos page">
+              colinha de comandos
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="Sobre mim page">
+              Sobre mim
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+    <a href="github.com/diegolinkk" target="_blank" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" rel="noopener" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+    <a href="https://www.linkedin.com/in/diego-oliveira-da-silva-269591a9/" target="_blank" class="linkedin ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+      
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://diegolinkk.github.io/posts/baixando-submodulos-do-git-e-github/&amp;title=Baixando%20subm%c3%b3dulo%20do%20Git%20e%20Github" class="ananke-social-link linkedin no-underline" aria-label="share on LinkedIn">
+        
+        <span class="icon"> <svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span>
+        
+      </a>
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Baixando submódulo do Git e Github</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2022-10-18T22:30:27-03:00">October 18, 2022</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Nesse post vamos entender como baixar submódulos do Github juntamente com o clone do projeto.</p>
+<h2 id="o-que-são-submódulos-do-git-">O que são submódulos do git ?</h2>
+<p>De uma forma bem resumida, é um git dentro de outro git.</p>
+<h2 id="mas-pra-que-isso-serve-">Mas pra que isso serve ?</h2>
+<p>Digamos que você esteja desenvolvendo um blog que utiliza um template de terceiro. Esse template por sua vez, tem seu próprio repositório git e seria interessante que você mantivesse sempre essa pasta atualizada no seu atual repositório, seja lá por motivos de segurança ou de otimização.
+Para que você não precise ficar baixando esse módulo separado da sua pasta e copiar/colar em seguida no seu repositório, você pode adicionar um &ldquo;git de terceiro&rdquo; dentro do  seu repositório e atualizar sempre que você quiser (normalmente com git pull). Esse recurso é chamado de submódulo no git.</p>
+<h2 id="e-como-adicionar-um-submódulo-no-meu-repositório-">E como adicionar um submódulo no meu repositório ?</h2>
+<p>Dentro do seu repositório git já iniciado, você deve escolher uma subpasta e apontar o link do repositório através do comando abaixo.</p>
+<p>No exemplo abaixo, vamos adicionar um submódulo dentro da subpasta &ldquo;teste&rdquo; do seu repositório:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6272a4"># o link é de um repositório válido do github</span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># A forma de adicionar um submódulo é muito parecida com a de clonar um repositório com o comando &#34;git clone&#34;</span>
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git teste</span></span></code></pre></div>
+<p>Pronto, agora toda vez que eu quiser atualizar essa pasta com o seu repositório git, eu entro dentro dessa pasta e executo o &ldquo;git pull&rdquo;, da mesma forma que faríamos com qualquer outro projeto:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#6272a4"># acessando a pasta do submódulo</span>
+</span></span><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">cd</span> teste
+</span></span><span style="display:flex;"><span><span style="color:#6272a4"># atualizando o git com o repositório remoto</span>
+</span></span><span style="display:flex;"><span>git pull</span></span></code></pre></div>
+<h2 id="e-quando-eu-baixar-meu-repositório-em-outro-local-os-submódulos-ja-são-baixados-juntos-automaticamente-">E quando eu baixar meu repositório em outro local, os submódulos ja são baixados juntos automaticamente ?</h2>
+<p>A resposta é não. A pasta do submódulo vem baixada, porém vem vazia, mas isso é fácil de resolver, basta adicionar o comando &ndash;recursive assim que você baixar o repositório:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push <span style="color:#ff79c6">[</span>https://link-do-seu-projeto.git<span style="color:#ff79c6">]</span> --recursive</span></span></code></pre></div>
+<p>pronto, tudo nos conformes</p>
+<h2 id="e-para-listar-os-submódulos-que-meu-projeto-tem">E para listar os submódulos que meu projeto tem:</h2>
+<p>Simples:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule</span></span></code></pre></div></p>
+<p>A saída vai ser algo parecido com isso:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>1b21063360f0f7905f0ae9d736d14da0c4393e87 blog/public <span style="color:#ff79c6">(</span>heads/master<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>+0340796dd5889154b8d1e71d09b75bf2883f2bab blog/themes/ananke <span style="color:#ff79c6">(</span>v2.5.6-113-g0340796<span style="color:#ff79c6">)</span></span></span></code></pre></div></p>
+<p>Nessa saída, temos dois submódulos, sendo que o primeiro está na pasta blog/public e o segundo está em blog/themes/ananke.</p>
+<h2 id="como-eu-vejo-o-link-do-repositório-do-submódulo-">Como eu vejo o link do repositório do submódulo ?</h2>
+<p>Com a informação acima em mãos, eu posso ir na pasta do repositório. No exemplo abaixo, vamos acessar a pasta blog/public:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8be9fd;font-style:italic">cd</span> blog/public</span></span></code></pre></div></p>
+<p>Agora vamos executar o comando git remote &ndash;verbose para verificar o link do repositório remoto:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote -v</span></span></code></pre></div></p>
+<p>A saída vai ser mais ou menos assim:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>origin  https://github.com/theNewDynamic/gohugo-theme-ananke.git <span style="color:#ff79c6">(</span>fetch<span style="color:#ff79c6">)</span>
+</span></span><span style="display:flex;"><span>origin  https://github.com/theNewDynamic/gohugo-theme-ananke.git <span style="color:#ff79c6">(</span>push<span style="color:#ff79c6">)</span></span></span></code></pre></div></p>
+<p>Se você quiser um repositório de exemplo que contenha submódulos reais, você pode clonar o repositório git desse blog no link abaixo:</p>
+<p><a href="https://github.com/diegolinkk/blog">https://github.com/diegolinkk/blog</a></p>
+<p>Por hoje é só.</p>
+<h2 id="fontes">Fontes</h2>
+<ul>
+<li><a href="https://pt.stackoverflow.com/questions/111313/para-que-serve-um-submodule-no-git">https://pt.stackoverflow.com/questions/111313/para-que-serve-um-submodule-no-git</a></li>
+<li><a href="https://github.com/theNewDynamic/gohugo-theme-ananke">https://github.com/theNewDynamic/gohugo-theme-ananke</a></li>
+</ul>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="/tags/git/github/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">git/github</a>
+   </li>
+  
+   <li class="list di">
+     <a href="/tags/colinha/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">colinha</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/posts/como-receber-argumentos-em-scripts-php/">Recebendo e trabalhando com parâmetros em scripts PHP</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/teste/">Como Listar e conectar à Databases, listar tabelas e fazer queries no Postgres</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/posts/comandos-basicos-postgres/">Como Listar e conectar à Databases, listar tabelas e fazer queries no Postgres</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://diegolinkk.github.io/" >
+    &copy;  Diegolinkk 2022 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+    <a href="github.com/diegolinkk" target="_blank" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" rel="noopener" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+    <a href="https://www.linkedin.com/in/diego-oliveira-da-silva-269591a9/" target="_blank" class="linkedin ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
